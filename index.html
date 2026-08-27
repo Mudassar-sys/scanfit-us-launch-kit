@@ -1029,6 +1029,7 @@ footer .built{margin-top:10px;font-size:12px;color:var(--muted);font-weight:600}
       if(p<1){requestAnimationFrame(step);}
     }
     requestAnimationFrame(step);
+    setTimeout(function(){if(ageNum.textContent!==String(target)){ageNum.textContent=String(target);}},1600);
   }
   var phoneEl=document.querySelector('.phone');
   var ioPhone=new IntersectionObserver(function(entries){
